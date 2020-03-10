@@ -42,17 +42,30 @@
 
   </section>
 
-  <form>
+  <form class=flex>
       <h2>Contact us</h2>
-      <label for="name">name</label><input type="name" name="name" id="name" required>
-      <label for="email">email</label><input type="email" name="email" id="email" placeholder="@" required>
-      <label for="select_a_request">request</label><select name="request" id="request">
-        <option value="booking" selected>I want to book a table (groups)</option>
-        <option value="place">I have question about the place</option>
-        <option value="gig">I have a question about a gig</option>
-        <option value="another_question">I have another question</option></select>
-      <label for="date">Date</label><input type="date" name="booking_date">
-      <label for="message">Your message</label><textarea id="message" name="message" rows="5"></textarea>
+      <div class="formbloc">
+          <div class="formItem flex">
+            <label for="name">name</label>
+            <input type="name" name="name" id="name" required></div>
+          <div class="formItem flex">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required></div>
+          <div class="formItem flex">
+            <label for="select_a_request">request</label>
+            <select name="request" id="request">
+              <option value="0" selected>what's your question about ?</option>
+              <option value="booking">I want to book a table (groups)</option>
+              <option value="place">I have question about the place</option>
+              <option value="gig">I have a question about a gig</option>
+              <option value="another_question">I have another question</option></select></div>
+          <div class="formItem flex">
+            <label for="date">date</label>
+            <input type="date" name="booking_date"></div>
+          <div class="formItem flex">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5"></textarea></div>
+      </div>
   </form>
 
 

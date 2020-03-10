@@ -22,6 +22,10 @@
 
 /* Elodie Menu + resa */
 
+.FoodMenu{
+    margin: 20px 0 20px 0;
+}
+
 .FoodMenuWrap{
     align-items: center;
     justify-content: center;
@@ -34,7 +38,6 @@
     transform:rotate(-10deg);
     flex-shrink: 2;
     overflow: hidden;
-    
 }
 
 .FoodMenuPic:hover {
@@ -47,16 +50,30 @@
     text-align: end;
 }
 
-@media screen and (max-width: 1100px) {
-
-
-
-
-
-
-  }
-
 /* Formulaire */
+
+form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formItem {
+    flex-direction: row;
+    margin: 40px 0 0 0 ;
+}
+
+label {
+    display:block;
+    width: 100px;
+}
+
+input , textarea {
+    display: block;
+    width: 300px;
+}
+
+
 
 
 
