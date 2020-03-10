@@ -29,6 +29,46 @@
 
 /* Elisa concert + footer-->*/
 
+.Elisa {
+    background-color: #BF800B;
+}
+
+.concertssection {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.mai img,
+.juin img,
+.juillet img {
+    height: 100px;
+}
+
+div.mai,
+div.juin,
+div.juillet {
+    display: flex;
+    border: 1px solid white;
+}
+
+div.mai:hover,
+div.juin:hover,
+div.juillet:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background-color: #E8AF79;
+}
+
+.mai li,
+.juin li,
+.juillet li {
+    align-self: center;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
 footer {
     background-color: #BF800B;
     display: flex;
