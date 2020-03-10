@@ -22,6 +22,42 @@
 
 /* Elodie Menu + resa */
 
+.FoodMenuWrap{
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: :relative;
+}
+
+.FoodMenuBox {
+    flex-direction: column;
+    transform:rotate(-10deg);
+    flex-shrink: 2;
+    overflow: hidden;
+    
+}
+
+.FoodMenuPic:hover {
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+.FoodPicLegend {
+    width: 80%;
+    text-align: end;
+}
+
+@media screen and (max-width: 1100px) {
+
+
+
+
+
+
+  }
+
+/* Formulaire */
+
 
 
 
