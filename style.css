@@ -1,4 +1,4 @@
-/* Color Theme Swatches in Hex */
+    /* Color Theme Swatches in Hex */
 
 .Voyages-1-hex {
     color: #011F26;
@@ -14,82 +14,69 @@
 
 .Voyages-4-hex {
     color: #F2BB16;
-}
+ /* General Elements */
+ .flex {
+     display: flex;
+    }
+  .Voyages-5-hex {
+        color: #BF800B;
+    }
+    /*David nv + present*/
+    /* Elodie Menu + resa */
+    /* Elisa concert + footer-->*/
+    .Elisa {
+        background-color: #BF800B;
+    }
 
-.Voyages-5-hex {
-    color: #BF800B;
-}
-
-
-/*David nv + present*/
-
-
-/* Elodie Menu + resa */
-
-
-/* Elisa concert + footer-->*/
-
-.Elisa {
-    background-color: #BF800B;
-}
-
-.concertssection {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-left: 30px;
-}
-
-.mai img,
-.juin img,
-.juillet img {
-    height: 100px;
-}
-
-div.mai,
-div.juin,
-div.juillet {
-    display: flex;
-    border: 1px solid white;
-}
-
-div.mai:hover,
-div.juin:hover,
-div.juillet:hover {
-    transform: scale(1.1);
-    z-index: 100;
-    background-color: #E8AF79;
-}
-
-.mai li,
-.juin li,
-.juillet li {
-    align-self: center;
-    list-style-type: none;
-    margin-left: 10px;
-}
-
-footer {
-    background-color: #BF800B;
-    display: flex;
-    margin-top: 10%;
-}
-
-footer ul {
-    display: block;
-    list-style-type: none;
-    overflow: hidden;
-    flex: 20%;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-footer li a {
-    color: white;
-    line-height: 10px;
-    text-decoration: none;
-}
-
-footer li {
-    padding-top: 10px;
-}
+    .concertssection {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 30px;
+    }
+    .mai img,
+    .juin img,
+    .juillet img {
+        height: 100px;
+    }
+    div.mai,
+    div.juin,
+    div.juillet {
+        display: flex;
+        border: 1px solid white;
+    }
+    div.mai:hover,
+    div.juin:hover,
+    div.juillet:hover {
+        transform: scale(1.1);
+        z-index: 100;
+        background-color: #E8AF79;
+    }
+    .mai li,
+    .juin li,
+    .juillet li {
+        align-self: center;
+        list-style-type: none;
+        margin-left: 10px;
+    }
+    footer {
+        background-color: #BF800B;
+        display: flex;
+        margin-top: 10%;
+    }
+    footer ul {
+        display: block;
+        list-style-type: none;
+        overflow: hidden;
+        flex: 20%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer li a {
+        color: white;
+        line-height: 10px;
+        text-decoration: none;
+    }
+    footer li {
+        padding-top: 10px;
+    }
