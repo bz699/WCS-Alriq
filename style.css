@@ -1,24 +1,55 @@
 /* Color Theme Swatches in Hex */
-.Voyages-1-hex { color: #011F26; }
-.Voyages-2-hex { color: #118C76; }
-.Voyages-3-hex { color: #25D9B8; }
-.Voyages-4-hex { color: #F2BB16; }
-.Voyages-5-hex { color: #BF800B; }
+
+.Voyages-1-hex {
+    color: #011F26;
+}
+
+.Voyages-2-hex {
+    color: #118C76;
+}
+
+.Voyages-3-hex {
+    color: #25D9B8;
+}
+
+.Voyages-4-hex {
+    color: #F2BB16;
+}
+
+.Voyages-5-hex {
+    color: #BF800B;
+}
 
 
 /*David nv + present*/
 
 
-
-
-
-
 /* Elodie Menu + resa */
-
-
-
-
 
 
 /* Elisa concert + footer-->*/
 
+footer {
+    background-color: #BF800B;
+    display: flex;
+    margin-top: 10%;
+}
+
+footer ul {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    flex: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer li a {
+    color: white;
+    line-height: 10px;
+    text-decoration: none;
+}
+
+footer li {
+    padding-top: 10px;
+}
