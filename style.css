@@ -40,6 +40,11 @@
     cursor:pointer;
 }
 
+.FoodPic {
+    max-width: 100%;
+    height: auto;
+}
+
 .FoodPicLegend {
     width: 80%;
     text-align: end;
