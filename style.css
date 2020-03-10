@@ -1,82 +1,203 @@
-    /* Color Theme Swatches in Hex */
-
-.Voyages-1-hex {
-    color: #011F26;
-}
-
-.Voyages-2-hex {
-    color: #118C76;
-}
-
-.Voyages-3-hex {
-    color: #25D9B8;
-}
-
-.Voyages-4-hex {
-    color: #F2BB16;
- /* General Elements */
- .flex {
-     display: flex;
-    }
-  .Voyages-5-hex {
-        color: #BF800B;
-    }
-    /*David nv + present*/
-    /* Elodie Menu + resa */
-    /* Elisa concert + footer-->*/
-    .Elisa {
-        background-color: #BF800B;
-    }
-
-    .concertssection {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 30px;
-    }
-    .mai img,
-    .juin img,
-    .juillet img {
-        height: 100px;
-    }
-    div.mai,
-    div.juin,
-    div.juillet {
-        display: flex;
-        border: 1px solid white;
-    }
-    div.mai:hover,
-    div.juin:hover,
-    div.juillet:hover {
-        transform: scale(1.1);
-        z-index: 100;
-        background-color: #E8AF79;
-    }
-    .mai li,
-    .juin li,
-    .juillet li {
-        align-self: center;
-        list-style-type: none;
-        margin-left: 10px;
-    }
-    footer {
-        background-color: #BF800B;
-        display: flex;
-        margin-top: 10%;
-    }
-    footer ul {
-        display: block;
-        list-style-type: none;
-        overflow: hidden;
-        flex: 20%;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    footer li a {
-        color: white;
-        line-height: 10px;
-        text-decoration: none;
-    }
-    footer li {
-        padding-top: 10px;
-    }
+                 /* Color Theme Swatches in Hex */
+                 
+                 .Voyages-1-hex {
+                     color: #011F26;
+                 }
+                 
+                 .Voyages-2-hex {
+                     color: #118C76;
+                 }
+                 
+                 .Voyages-3-hex {
+                     color: #25D9B8;
+                 }
+                 
+                 .Voyages-4-hex {
+                     color: #F2BB16;
+                 }
+                 /* General Elements */
+                 
+                 .flex {
+                     display: flex;
+                 }
+                 
+                 .Voyages-5-hex {
+                     color: #BF800B;
+                 }
+                 /*David nv + present*/
+                 /* Elodie Menu + resa */
+                 /* Elisa concert + footer-->*/
+                 
+                 .Elisa {
+                     background: rgb(191, 128, 11);
+                     background: radial-gradient(circle, rgba(191, 128, 11, 1) 0%, rgba(242, 187, 22, 1) 100%);
+                     flex-direction: column;
+                     align-items: center;
+                 }
+                 
+                 .content-Elisa {
+                     width: 70%;
+                     margin-bottom: 20px;
+                 }
+                 
+                 .grosblok {
+                     flex: 1;
+                     align-items: center;
+                     justify-content: center;
+                 }
+                 
+                 .concertssection {
+                     flex-direction: column;
+                 }
+                 
+                 .mai img,
+                 .juin img,
+                 .juillet img {
+                     height: 100px;
+                 }
+                 
+                 div.mai,
+                 div.juin,
+                 div.juillet {
+                     border: 1px solid white;
+                     margin-top: 15px;
+                     width: 110%;
+                     box-shadow: 0px 5px 5px #999;
+                 }
+                 
+                 div.mai:hover,
+                 div.juin:hover,
+                 div.juillet:hover {
+                     transform: scale(1.1);
+                     z-index: 100;
+                     background-color: #F2BB16;
+                 }
+                 
+                 .mai li,
+                 .juin li,
+                 .juillet li {
+                     align-self: center;
+                     list-style-type: none;
+                     font-size: 18px;
+                 }
+                 
+                 .aside-card {
+                     /*1*/
+                     margin: auto auto;
+                     height: fit-content;
+                     /*2*/
+                     background-color: white;
+                     /*3*/
+                     box-shadow: 0px 5px 20px #999;
+                     flex: 1;
+                     display: flex;
+                     justify-content: center;
+                     /*4*/
+                 }
+                 
+                 .aside-card a {
+                     /*5*/
+                     color: #333;
+                     text-decoration: none;
+                 }
+                 
+                 .aside-card:hover .aside-card-image img {
+                     /*6*/
+                     width: 160%;
+                     filter: grayscale(0);
+                 }
+                 
+                 .aside-card-image {
+                     height: 250px;
+                     /*1*/
+                     position: relative;
+                     /*2*/
+                     overflow: hidden;
+                     /*3*/
+                 }
+                 
+                 .aside-card-image img {
+                     width: 150%;
+                     /*4*/
+                     /*5 - Méthode de centrage en fonction de la taille de l'image */
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                     filter: grayscale(1);
+                     /*6*/
+                     /*7 - Transition */
+                     transition-property: filter width;
+                     transition-duration: .3s;
+                     transition-timing-function: ease;
+                 }
+                 
+                 .aside-card-body {
+                     text-align: center;
+                     /*1*/
+                     padding: 15px 20px;
+                     /*2*/
+                     box-sizing: border-box;
+                     /*3*/
+                 }
+                 
+                 .aside-card-date,
+                 .aside-card-title {
+                     text-align: center;
+                     text-transform: uppercase;
+                     font-weight: bold;
+                 }
+                 
+                 .aside-card-date,
+                 .aside-card-excerpt {
+                     color: #777;
+                 }
+                 
+                 footer {
+                     background-color: #BF800B;
+                     margin-top: 0px;
+                     padding-top: 25px;
+                     flex-direction: row;
+                     justify-content: space-around;
+                 }
+                 
+                 footer ul {
+                     display: block;
+                     list-style-type: none;
+                     overflow: hidden;
+                 }
+                 
+                 footer li a {
+                     color: white;
+                     line-height: 10px;
+                     text-decoration: none;
+                 }
+                 
+                 footer li {
+                     padding-top: 10px;
+                     font-size: 18px;
+                 }
+                 
+                 @media screen and (max-width: 1300px) {
+                     div.aside-card {
+                         margin-top: 20px;
+                         margin-left: 50px;
+                     }
+                     .content-Elisa {
+                         display: flow-root;
+                     }
+                 }
+                 
+                 @media screen and (max-width: 820px) {
+                     div.aside-card {
+                         margin-left: auto;
+                     }
+                     footer {
+                         flex-direction: column;
+                     }
+                     div.mai,
+                     div.juin,
+                     div.juillet {
+                         width: 100%;
+                     }
+                 }
