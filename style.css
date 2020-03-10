@@ -50,7 +50,7 @@
     text-align: end;
 }
 
-/* Formulaire */
+/* Form */
 
 form {
     flex-direction: column;
@@ -80,3 +80,24 @@ input , textarea {
 
 /* Elisa concert + footer-->*/
 
+
+
+
+
+
+/* Media Queyries */
+
+/* EK - Mobile */
+/* EK - Mobile Form*/
+
+@media screen and (max-width: 600px) {
+    form {
+        background-color: #25D9B8;
+    }
+
+    .formItem {
+        flex-direction: column;
+        margin: 20px 0 0 0 ;
+    }
+  
+}
