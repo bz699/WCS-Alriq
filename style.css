@@ -6,6 +6,13 @@
 .Voyages-5-hex { color: #BF800B; }
 
 
+/* General Elements */
+
+.flex{
+    display: flex;
+}
+
+
 /*David nv + present*/
 
 
@@ -14,8 +21,6 @@
 
 
 /* Elodie Menu + resa */
-
-
 
 
 
