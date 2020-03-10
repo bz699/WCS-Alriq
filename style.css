@@ -29,15 +29,10 @@
 .FoodMenuWrap{
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: :relative;
 }
 
 .FoodMenuBox {
     flex-direction: column;
-    transform:rotate(-10deg);
-    flex-shrink: 2;
-    overflow: hidden;
 }
 
 .FoodMenuPic:hover {
