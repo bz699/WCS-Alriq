@@ -4,13 +4,90 @@
   <meta charset="utf-8">
   <title>Projet 1</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- David nv + present-->
+<div class="parallax">  
+  <header class="header">
+      <a href="#home" class="logo"alt="Logo Alriq">Chez Alriq</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+              <li><a href="#infos" class="">Info Pratique</a></li>
+              <li><a href="#menu" class="">Menu</a></li>
+              <li><a href="#concert" class="">Concerts</a></li>
+              <li><a href="#contact" class="">Contact Us</a></li>
+          </ul>
+  </header>
+  <div class="title">
+    <h1>La Guinguette, Chez Alriq</h1>
+    <h3>Née en 1990 sur les bords de la Garonne, la Guinguette est le lieu idéal pour assister à un concert autour d'un verre ou d'un plat.</h3>
+  </div>
+</div>
 
+<section id="infos" class="infos">
+  <h1>Info Pratique</h1>
+<!-- Container flex for both cards-->
+<div class="card-section">
+      <!-- First card Accès-->
+      <div class="card">
+                <!-- First card title-->
+                <div class="card-header">
+                  <h2>Accès</h2>
+                </div>
+            <!-- new flex con-->
+            <div class="row">
+                <div class="avatar-container">
+                    <div class="photo">
+                      <img class="img" src="img/map-icon.png" alt="calendar" />
+                    </div>
+                  </div>
+                <div>
+                  <div class="content">
+                    <h2>Venir nous voir :</h2>
+                    <p>ZA Quai des Queyries, Port Bastide,33100 Bordeaux</p>
+                    <p><span style="font-weight: 400;"><strong>Parking</strong> payant<br /></span><span style="font-weight: 400;"><strong>Station VCub :</strong> Parc des Angéliques<br /></span><span style="font-weight: 400;"><strong>Tramway :</strong> ligne A – Arrêt Stalingrad<br /></span><span style="font-weight: 400;"><strong>Bus lignes :</strong> 45 – 91 – 92 – Arrêt Hortense</span></p>
+                  </div>
+                </div>
+            </div>
+      </div>
+      <div class="card">
 
+          <div class="card-header">
+            <h2>Horaires</h2>
+          </div>
 
+        <div class="row">
+          <div class="avatar-container">
+              <div class="photo">
+                <img class="img" src="img/schedule-yellow.png" alt="calendar" />
+              </div>
+          </div>
+          <div class="content">
+            <div class="content-text">
+              <h2>Nous sommes ouvert :</h2>
+              <p><strong>Mai et Septembre :</strong> du jeudi au samedi de 19h à 1h30</p>
+              <p><strong>Juin, Juillet et Août :</strong> du mercredi au samedi de 19h à 1h30</p>
+              <p><strong>Tous les dimanches de Mai à Septembre : </strong>de 12h à 20h</p>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
 
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+      <!-- front content -->
+      <img class="img" src="img/map-icon.png" alt="calendar" />
+		</div>
+		<div class="back">
+      <!-- back content -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5657.010497814707!2d-0.564056774046427!3d44.85200810497119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288053e45b51%3A0x1744fa88532740cc!2sLes%20Chantiers%20de%20la%20Garonne!5e0!3m2!1sfr!2sfr!4v1583877320679!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
+</div>
 
   <!-- Elodie Menu + resa -->
 
