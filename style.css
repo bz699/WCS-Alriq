@@ -6,11 +6,38 @@
 .Voyages-5-hex { color: #BF800B; }
 
 
+/* Fonts */
+
+@font-face{
+    font-family: 'Horizon';
+    src: url('font/HorizonRounded.otf');
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Horizon';
+  }
+
+  h1 {
+      font-size: 50px;
+  }
+
+  body {
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+  }  
+
+
+
 /* General Elements */
 
 .flex{
     display: flex;
 }
+
+a {
+    color: #F2BB16;
+  }
 
 
 /*David nv + present*/
@@ -23,31 +50,81 @@
 /* Elodie Menu + resa */
 
 .FoodMenu{
-    margin: 20px 0 20px 0;
-}
-
-.FoodMenuWrap{
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.FoodMenuBox {
-    flex-direction: column;
+.FoodMenu {
+    color: #F2BB16;
+
 }
 
-.FoodMenuPic:hover {
-    opacity: 0.7;
-    cursor:pointer;
+.FoodMenuWrap{
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    height: 230px;
+}
+
+.FoodMenuBox {
+    flex-direction: column;
+    width: 25%;
+    overflow: hidden;
+    display: block;
+    margin: -120px 0 0 10px;
+    box-shadow: 20px 0 0px 0 white;
+    transform:rotate(10deg);
+    background-color: #118C76;
+    height: 330px;
+}
+
+.FoodMenuFirstBox {
+    margin: 0 0 0 20px;
+}
+
+.FoodMenuInBox {
+    transform:rotate(-10deg);
+    margin: 120px 0 0 0;
 }
 
 .FoodPic {
-    max-width: 100%;
-    height: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150%;
+    height: 170px;
+    margin: 0 0 0 -15%;
 }
 
 .FoodPicLegend {
-    width: 80%;
-    text-align: end;
+    width: 100%;
+    height: 40px;
+    color: white;
+    transform: rotate(10deg);
+    margin: 5px 0 0 0;
+
+}
+
+.tapas{background-image: url("img/tapas.jpg");}
+.dish{background-image: url("img/dish.jpeg");}
+.beer{background-image: url("img/beer.jpeg");}
+.wine{background-image: url("img/wine.jpeg");}
+
+.FoodPicFirst{
+    padding-left: -15%;
+    position: absolute;
+    left:-12%;
+    width: 100%;
+}
+
+.FoodPicLast {
+    box-shadow: none;
+    left:20px;
+    box-shadow: none;
 }
 
 /* Form */
@@ -58,6 +135,10 @@ form {
     justify-content: center;
 }
 
+form h1 {
+    color: #F2BB16;
+}
+
 .formItem {
     flex-direction: row;
     margin: 40px 0 0 0 ;
@@ -66,13 +147,19 @@ form {
 label {
     display:block;
     width: 100px;
+    font-family: 'Roboto', sans-serif;
 }
 
 input , textarea {
     display: block;
     width: 300px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow:  2px 0px 2px rgba(0,0,0,0.4);
 }
 
+request {
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
@@ -90,7 +177,7 @@ input , textarea {
 /* EK - Mobile */
 /* EK - Mobile Form*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     form {
         background-color: #25D9B8;
     }
