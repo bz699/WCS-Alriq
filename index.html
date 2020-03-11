@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <title>Projet 1</title>
   <link rel="stylesheet" href="style.css">
-  <script src=script.js></script><noscript>This website uses JavaScript.</noscript>
+  <script src=script.js></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+  </style>
 </head>
 <body>
   <!-- David nv + present-->
@@ -15,66 +19,64 @@
 
   <!-- Elodie Menu + resa -->
   <section class="flex FoodMenu">
-    <h1>Our Menu</h1>
-
+    <h1>Le Menu</h1>
     <div class="flex FoodMenuWrap">
-
-      <div class="flex FoodMenuBox">
-        <div class="FoodMenuInBox">
-            <img class="FoodPic tapas"/>
-            <h2 class="FoodPicLegend">tapas</h2>
+      <div class="flex FoodMenuBigBox">
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox ">
+              <img class="FoodPic tapas FoodPicFirst" alt="une tranche de pain et de jambon"/>
+              <h2 class="FoodPicLegend">tapas</h2>
+          </div>
+        </div>
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox">
+              <img class="FoodPic dish" alt="une pizza"/>
+              <h2 class="FoodPicLegend">plats</h2>
+          </div>
         </div>
       </div>
-
-      <div class="flex FoodMenuBox">
-        <div class="FoodMenuInBox">
-            <img class="FoodPic dish"/>
-            <h2 class="FoodPicLegend">dish</h2>
+      <div class="flex FoodMenuBigBox">
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox">
+              <img class="FoodPic beer" alt="un verre de bière"/>
+              <h2 class="FoodPicLegend">bière</h2>
+          </div>
+        </div>
+        <div class="flex FoodMenuBox ">
+          <div class="FoodMenuInBox ">
+              <img class="FoodPic wine FoodPicLast" alt="trois verres de vin"/>
+              <h2 class="FoodPicLegend">vin</h2>
+          </div>
         </div>
       </div>
-
-      <div class="flex FoodMenuBox">
-        <div class="FoodMenuInBox">
-            <img class="FoodPic beer"/>
-            <h2 class="FoodPicLegend">beers</h2>
-        </div>
-      </div>
-
-      <div class="flex FoodMenuBox">
-        <div class="FoodMenuInBox ">
-            <img class="FoodPic wine"/>
-            <h2 class="FoodPicLegend">wine</h2>
-        </div>
-      </div>
-      
     </div>
   </section>
 
   <form class=flex>
-      <h1>Contact us</h1>
+      <h1>Nous contacter</h1>
       <div class="formbloc">
           <div class="formItem flex">
-            <label for="name">name</label>
-            <input type="name" name="name" id="name" required></div>
+            <label for="name">nom</label>
+            <input type="name" name="name" id="name"></div>
           <div class="formItem flex">
             <label for="email">email</label>
             <input type="email" name="email" id="email" required></div>
             
           <div class="formItem flex">
-            <label for="select_a_request">request</label>
+            <label for="select_a_request">votre demande</label>
             <select name="request" id="request">
-              <option value="0" selected>what's your question about ?</option>
-              <option value="booking">I want to book a table (groups)</option>
-              <option value="place">I have question about the place</option>
-              <option value="gig">I have a question about a gig</option>
-              <option value="another_question">I have another question</option></select></div>
+              <option value="0" selected>Pourquoi souhaitez-vos nous contacter ?</option>
+              <option value="booking">Je voudrais réserver (groupes)</option>
+              <option value="place">J'ai une question à propos du lieu</option>
+              <option value="gig">J'ai une question à propos d'un concert</option>
+              <option value="another_question">Il s'agit d'autre chose</option></select></div>
 
           <div class="formItem flex">
             <label for="date">date</label>
             <input type="date" name="booking_date"></div>
 
           <div class="formItem flex">
-            <label for="message">Your message</label>
+            <label for="message">votre message</label>
             <textarea id="message" name="message" rows="5"></textarea></div>
       </div>
   </form>
