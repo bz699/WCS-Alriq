@@ -63,49 +63,42 @@ a {
 
 .FoodMenuWrap{
     width: 80%;
-    max-width: 1000px;
-    overflow: hidden;
-    position: relative;
+    max-width: 900px;
     background-color: white;
-    height: 230px;
+    height: 220px;
 }
 
 .FoodMenuBox {
     flex-direction: column;
     width: 25%;
-    overflow: hidden;
     display: block;
-    margin: -120px 0 0 10px;
-    box-shadow: 20px 0 0px 0 white;
-    transform:rotate(10deg);
+    box-shadow: 10px 0 0px 0 white;
     background-color: #118C76;
-    height: 330px;
-}
-
-.FoodMenuFirstBox {
-    margin: 0 0 0 20px;
+    overflow: hidden;
+    height: 220px;
+    transform: rotate(10deg);
+    margin-right: 10px;
 }
 
 .FoodMenuInBox {
-    transform:rotate(-10deg);
-    margin: 120px 0 0 0;
+    margin: 0 0 0 0;
+    transform: rotate(-10deg);
 }
 
 .FoodPic {
-
     background-size: cover;
     background-repeat: no-repeat;
-    width: 150%;
+    width: 120%;
     height: 170px;
-    margin: 0 0 0 -15%;
+    margin: -15px 0 0 -12%;
 }
 
 .FoodPicLegend {
     width: 100%;
     height: 40px;
     color: white;
-    transform: rotate(10deg);
     margin: 5px 0 0 0;
+    transform: rotate(10deg);
 
 }
 
@@ -114,25 +107,13 @@ a {
 .beer{background-image: url("img/beer.jpeg");}
 .wine{background-image: url("img/wine.jpeg");}
 
-.FoodPicFirst{
-    padding-left: -15%;
-    position: absolute;
-    left:-12%;
-    width: 100%;
-}
-
-.FoodPicLast {
-    box-shadow: none;
-    left:20px;
-    box-shadow: none;
-}
-
 /* Form */
 
 form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px 0 0 0;
 }
 
 form h1 {
@@ -157,11 +138,6 @@ input , textarea {
     box-shadow:  2px 0px 2px rgba(0,0,0,0.4);
 }
 
-request {
-    font-family: 'Roboto', sans-serif;
-}
-
-
 
 
 
@@ -175,11 +151,28 @@ request {
 /* Media Queyries */
 
 /* EK - Mobile */
+
+
+@media screen and (max-width: 820px) {
+
+/* EK - Mobile FoodMenu */
+
+.FoodMenuWrap {
+}
+
+.FoodMenuBox {
+
+}
+
+
 /* EK - Mobile Form*/
 
-@media screen and (max-width: 800px) {
     form {
         background-color: #25D9B8;
+    }
+    
+    form h1 {
+        color: white;
     }
 
     .formItem {
