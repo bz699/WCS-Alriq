@@ -19,11 +19,14 @@ body {
     margin: 0;
 }
 
-/*David nv + present*/
+/* General Elements */
 
 a {
     color: #F2BB16;
   }
+.flex{
+    display: flex;
+}
 
 .parallax {
     background-image: url("img/Garonne.jpg");
@@ -45,6 +48,7 @@ a {
     z-index: 2;
     height: 700px;
   }
+/*David nv + present*/
 
   .title h1,.title h3 {
     color: white;
@@ -264,6 +268,8 @@ div.card{
 
 /* Elodie Menu + resa */
 
+
+/* Elodie Menu + resa */
 
 
 
