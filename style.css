@@ -74,7 +74,7 @@ a {
     overflow: hidden;
     background-color: #011F26;
   }
-  
+
   .header li a {
     display: block;
     padding: 20px 20px;
@@ -103,7 +103,7 @@ a {
     transition: max-height .2s ease-out;
   }
   
-  /* menu icon */
+  /* menu icon = menu burger style */
   
   .header .menu-icon {
     cursor: pointer;
@@ -142,7 +142,7 @@ a {
     top: -5px;
   }
   
-  /* menu btn */
+  /* menu btn = passage 3 traits menu burger à la croix */
   
   .header .menu-btn {
     display: none;
@@ -202,10 +202,6 @@ a {
     box-shadow: 0px 5px 20px #999;
     margin: 20px;
 }
-
-.content .content-text{
-  margin-left: 20px;
-}
 .content h2{
   color: #F2BB16;
 }
@@ -221,63 +217,10 @@ div.card{
 .row{
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   margin: 60px 20px 60px 20px;
 }
-
-/* TRY FLIP */
-
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-
-iframe{
-  border-radius: 60%;
-  width: 200px;
-  height: 200px;
-}
-
   
-  @media (min-width: 750px) {
+  @media (min-width: 820px) {
     .header li {
       float: left;
     }
@@ -299,17 +242,24 @@ iframe{
       margin-top: 0;
       font-size: 30px;
     }
-    .card-section{
-      flex-wrap: wrap;
-    }
   }
-/*@media (min-width: 650px){
+@media (max-width: 1300px){
 
   .card-section{
     flex-wrap: wrap;
   }
+  .row{
+    flex-wrap: wrap;
+  }
 }
-*/
+
+@media (max-width: 700px;){
+  .row {
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+  }
+}
+
 
 
 /* Elodie Menu + resa */

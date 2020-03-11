@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Projet 1</title>
+  <title>Chez Alriq</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
           <ul class="menu">
               <li><a href="#infos" class="">Info Pratique</a></li>
               <li><a href="#menu" class="">Menu</a></li>
-              <li><a href="#concert" class="">Concerts</a></li>
+              <li><a href="#concerts" class="">Concerts</a></li>
               <li><a href="#contact" class="">Contact Us</a></li>
           </ul>
   </header>
@@ -37,7 +37,7 @@
                   <h2>Accès</h2>
                 </div>
             <!-- new flex con-->
-            <div class="row">
+            <div class="row" ontouchstart="this.classList.toggle('hover');">
                 <div class="avatar-container">
                     <div class="photo">
                       <img class="img" src="img/map-icon.png" alt="calendar" />
@@ -75,20 +75,6 @@
       </div>
 </div>
 </section>
-
-<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-	<div class="flipper">
-		<div class="front">
-      <!-- front content -->
-      <img class="img" src="img/map-icon.png" alt="calendar" />
-		</div>
-		<div class="back">
-      <!-- back content -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5657.010497814707!2d-0.564056774046427!3d44.85200810497119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288053e45b51%3A0x1744fa88532740cc!2sLes%20Chantiers%20de%20la%20Garonne!5e0!3m2!1sfr!2sfr!4v1583877320679!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</div>
-	</div>
-</div>
-
   <!-- Elodie Menu + resa -->
 
 
@@ -99,4 +85,31 @@
   <!-- Elisa concert + footer-->
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </html>
