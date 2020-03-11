@@ -26,8 +26,7 @@
       font-family: 'Roboto', sans-serif;
       box-sizing: border-box;
       margin: 0;
-  }  
-
+  }
 
 
 /* General Elements */
@@ -55,7 +54,7 @@ a {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .FoodMenu h1 {
@@ -108,6 +107,7 @@ a {
     transform: rotate(10deg);
 }
 
+
 .tapas{background-image: url("img/tapas.jpg");}
 .dish{background-image: url("img/dish.jpeg");}
 .beer{background-image: url("img/beer.jpeg");}
@@ -124,7 +124,9 @@ form {
 }
 
 .formbloc {
-    margin: 0 0 100px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 form h1 {
@@ -144,12 +146,20 @@ label {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-input , textarea {
+input , textarea , select{
     display: block;
     width: 300px;
     box-shadow:  2px 0px 2px rgba(0,0,0,0.4);
 }
 
+.ButtonBox {
+    width: 400px;
+    margin: 10px 0 0 400px;
+}
+
+form button {
+    width: 100px;
+}
 
 
 
@@ -170,10 +180,14 @@ input , textarea {
 
     .FoodMenu {
         flex-direction: column;
+        margin: 10px 10px;
+        background-color: #118C76;
+
     }
 
     .FoodMenu h1 {
         color: #F2BB16;
+        margin: 10px 10px;
     }
 
     .FoodMenuWrap {
@@ -186,17 +200,19 @@ input , textarea {
     .FoodMenuBigBox {
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0 0 10px 0;
     }
 
     .FoodMenuBox {
-        width: 48%;
+        width: 49%;
         transform: none;
-        margin: 1px;
+        box-shadow: none;
+        margin: 0;
     }
 
     .FoodMenuInBox {
-        margin: 0 0 0 0;
+        margin: 0;
         transform: none;
     }
 
@@ -215,10 +231,16 @@ input , textarea {
 
     form {
         background-color: #25D9B8;
+        margin: -10px 10px 10px 10px;
     }
     
+    .formbloc {
+        margin: 0 0 10px 0;
+    }
+
     form h1 {
         color: white;
+        margin: 10px 10px;
     }
 
     .formItem {
@@ -230,5 +252,10 @@ input , textarea {
         width: 200px;
         color: white;
         font-family: 'Roboto Slab', sans-serif;
+    }
+
+    .ButtonBox {
+        width: 300px;
+        margin: 10px 0 0 200px;
     }
 }
