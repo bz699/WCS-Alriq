@@ -233,7 +233,7 @@ a {
 .infos h1 {
     font-size: 50px;
     text-align: center;
-    margin-bottom: 40px 40px 20px 40px;
+    margin-bottom: 40px 0;
     color: #BF800B;
 }
 
@@ -337,7 +337,8 @@ div.card {
 }
 
 .FoodMenu h1 {
-    color: #F2BB16;
+    color: #BF800B;
+    margin: 40px 0;
 }
 
 .FoodMenuWrap {
@@ -346,6 +347,7 @@ div.card {
     max-width: 900px;
     background-color: white;
     height: 220px;
+    margin: 40px 0;
 }
 
 .FoodMenuBigBox {
@@ -366,7 +368,11 @@ div.card {
 }
 
 .FoodMenuBox:hover {
-    opacity: 0.7;
+    transform: none;
+    cursor: pointer;
+    z-index: 1;
+    border: 10px solid #F2BB16;
+    box-shadow: none;
 }
 
 .FoodMenuInBox {
@@ -413,19 +419,21 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 0 0;
+    margin: 40px 0;
 }
 
 .formbloc {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 100px 0 0;
 }
 
 form h1 {
     color: #F2BB16;
     width: 100%;
     text-align: center;
+    margin: 40px 0;
 }
 
 .formItem {
@@ -436,15 +444,15 @@ form h1 {
 form label {
     display:block;
     width: 100px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-input,
-textarea,
-select {
+form input, textarea, select {
     display: block;
-    width: 300px;
-    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    width: 450px;
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 .ButtonBox {
@@ -504,6 +512,7 @@ form button {
         transform: none;
     }
     /* EK - Mobile Form*/
+
     form {
         background-color: #25D9B8;
         margin: -10px 10px 10px 10px;
@@ -526,8 +535,17 @@ form button {
     form label {
         width: 200px;
         color: white;
-        font-family: 'Roboto Slab', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
+
+    form select {
+        height: 40px;
+    }
+
+    form input, textarea, select {
+    width: 350px;
+}
+
     .ButtonBox {
         width: 300px;
         margin: 10px 0 0 200px;
@@ -710,9 +728,10 @@ footer li {
     footer {
         flex-direction: column;
     }
-    div.mai,
-    div.juin,
-    div.juillet {
+    div .mai,
+    div .juin,
+    div .juillet {
         width: 100%;
+        padding-right: 10px;
     }
 }
