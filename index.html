@@ -4,7 +4,13 @@
   <meta charset="utf-8">
   <title>Chez Alriq</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <script src=script.js></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+  </style>
+
 </head>
 <body>
   <!-- David nv + present-->
@@ -76,9 +82,76 @@
 </div>
 </section>
   <!-- Elodie Menu + resa -->
+  <section class="flex FoodMenu">
+    <h1>Le Menu</h1>
 
+    <div class="flex FoodMenuWrap">
 
+      <div class="flex FoodMenuBigBox">
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox ">
+              <div class="FoodPic FoodPicFirst tapas"></div>
+              <h2 class="FoodPicLegend">tapas</h2>
+          </div>
+        </div>
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox">
+              <div class="FoodPic dish"></div>
+              <h2 class="FoodPicLegend">plats</h2>
+          </div>
+        </div>
+      </div>
 
+      <div class="flex FoodMenuBigBox">
+        <div class="flex FoodMenuBox">
+          <div class="FoodMenuInBox">
+              <div class="FoodPic beer"></div>
+              <h2 class="FoodPicLegend">bière</h2>
+          </div>
+        </div>
+        <div class="flex FoodMenuBox ">
+          <div class="FoodMenuInBox ">
+              <div class="FoodPic wine FoodPicLast"></div>
+              <h2 class="FoodPicLegend">vin</h2>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </section>
+
+  <form class=flex>
+      <h1>Nous contacter</h1>
+      <div class="formbloc flex">
+          <div class="formItem flex">
+            <label for="name">nom</label>
+            <input type="text" name="name" id="name"></div>
+          <div class="formItem flex">
+            <label for="email">email</label>
+            <input type="text" name="email" id="email" required></div>
+            
+          <div class="formItem flex">
+            <label for="request">votre demande</label>
+            <select name="request" id="request">
+              <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
+              <option value="booking">Je voudrais réserver (groupes)</option>
+              <option value="place">J'ai une question à propos du lieu</option>
+              <option value="gig">J'ai une question à propos d'un concert</option>
+              <option value="another_question">Il s'agit d'autre chose</option></select></div>
+
+          <div class="formItem flex">
+            <label for="date">date</label>
+            <input type="date" name="booking_date" id="date"></div>
+
+          <div class="formItem flex">
+            <label for="message">votre message</label>
+            <textarea id="message" name="message" rows="5"></textarea></div>
+          
+            <div class="ButtonBox">
+            <button>envoyer</button></div>
+      </div>
+  </form>
 
 
 
