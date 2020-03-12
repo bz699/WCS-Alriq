@@ -1,188 +1,283 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Chez Alriq</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Chez Alriq</title>
+    <link rel="stylesheet" href="style.css">
 
-  <script src=script.js></script>
-  <style>
-      @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-      @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-  </style>
-
+    <script src=script.js></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+    </style>
 </head>
+
 <body>
-  <!-- David nv + present-->
-<div class="parallax">  
-  <header class="header">
-      <a href="#home" class="logo"alt="Logo Alriq">Chez Alriq</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul class="menu">
-              <li><a href="#infos" class="">Info Pratique</a></li>
-              <li><a href="#menu" class="">Menu</a></li>
-              <li><a href="#concerts" class="">Concerts</a></li>
-              <li><a href="#contact" class="">Contact Us</a></li>
-          </ul>
-  </header>
-  <div class="title">
-    <h1>La Guinguette, Chez Alriq</h1>
-    <h3>Née en 1990 sur les bords de la Garonne, la Guinguette est le lieu idéal pour assister à un concert autour d'un verre ou d'un plat.</h3>
-  </div>
-</div>
-
-<section id="infos" class="infos">
-  <h1>Info Pratique</h1>
-<!-- Container flex for both cards-->
-<div class="card-section">
-      <!-- First card Accès-->
-      <div class="card">
-                <!-- First card title-->
-                <div class="card-header">
-                  <h2>Accès</h2>
-                </div>
-            <!-- new flex con-->
-            <div class="row" ontouchstart="this.classList.toggle('hover');">
-                <div class="avatar-container">
-                    <div class="photo">
-                      <img class="img" src="img/map-icon.png" alt="calendar" />
-                    </div>
-                  </div>
-                <div>
-                  <div class="content">
-                    <h2>Venir nous voir :</h2>
-                    <p>ZA Quai des Queyries, Port Bastide,33100 Bordeaux</p>
-                    <p><span style="font-weight: 400;"><strong>Parking</strong> payant<br /></span><span style="font-weight: 400;"><strong>Station VCub :</strong> Parc des Angéliques<br /></span><span style="font-weight: 400;"><strong>Tramway :</strong> ligne A – Arrêt Stalingrad<br /></span><span style="font-weight: 400;"><strong>Bus lignes :</strong> 45 – 91 – 92 – Arrêt Hortense</span></p>
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="card">
-
-          <div class="card-header">
-            <h2>Horaires</h2>
-          </div>
-
-        <div class="row">
-          <div class="avatar-container">
-              <div class="photo">
-                <img class="img" src="img/schedule-yellow.png" alt="calendar" />
-              </div>
-          </div>
-          <div class="content">
-            <div class="content-text">
-              <h2>Nous sommes ouvert :</h2>
-              <p><strong>Mai et Septembre :</strong> du jeudi au samedi de 19h à 1h30</p>
-              <p><strong>Juin, Juillet et Août :</strong> du mercredi au samedi de 19h à 1h30</p>
-              <p><strong>Tous les dimanches de Mai à Septembre : </strong>de 12h à 20h</p>
-          </div>
+    <!-- David nv + present-->
+    <div class="parallax">
+        <header class="header">
+            <a href="#home" class="logo" alt="Logo Alriq">Chez Alriq</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#infos" class="">Info Pratique</a></li>
+                <li><a href="#menu" class="">Menu</a></li>
+                <li><a href="#concerts" class="">Concerts</a></li>
+                <li><a href="#contact" class="">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="title">
+            <h1>La Guinguette, Chez Alriq</h1>
+            <h3>Née en 1990 sur les bords de la Garonne, la Guinguette est le lieu idéal pour assister à un concert autour d'un verre ou d'un plat.</h3>
         </div>
-      </div>
-</div>
-</section>
-  <!-- Elodie Menu + resa -->
-  <section class="flex FoodMenu">
-    <h1>Le Menu</h1>
-
-    <div class="flex FoodMenuWrap">
-
-      <div class="flex FoodMenuBigBox">
-        <div class="flex FoodMenuBox">
-          <div class="FoodMenuInBox ">
-              <div class="FoodPic FoodPicFirst tapas"></div>
-              <h2 class="FoodPicLegend">tapas</h2>
-          </div>
-        </div>
-        <div class="flex FoodMenuBox">
-          <div class="FoodMenuInBox">
-              <div class="FoodPic dish"></div>
-              <h2 class="FoodPicLegend">plats</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex FoodMenuBigBox">
-        <div class="flex FoodMenuBox">
-          <div class="FoodMenuInBox">
-              <div class="FoodPic beer"></div>
-              <h2 class="FoodPicLegend">bière</h2>
-          </div>
-        </div>
-        <div class="flex FoodMenuBox ">
-          <div class="FoodMenuInBox ">
-              <div class="FoodPic wine FoodPicLast"></div>
-              <h2 class="FoodPicLegend">vin</h2>
-          </div>
-        </div>
-      </div>
-      
     </div>
 
-  </section>
 
-  <form class=flex>
-      <h1>Nous contacter</h1>
-      <div class="formbloc flex">
-          <div class="formItem flex">
-            <label for="name">nom</label>
-            <input type="text" name="name" id="name"></div>
-          <div class="formItem flex">
-            <label for="email">email</label>
-            <input type="text" name="email" id="email" required></div>
-            
-          <div class="formItem flex">
-            <label for="request">votre demande</label>
-            <select name="request" id="request">
+
+    <section id="infos" class="infos">
+        <h1>Info Pratique</h1>
+        <!-- Container flex for both cards-->
+        <div class="card-section">
+            <!-- First card Accès-->
+            <div class="card">
+                <!-- First card title-->
+                <div class="card-header">
+                    <h2>Accès</h2>
+                </div>
+                <!-- new flex con-->
+                <div class="row" ontouchstart="this.classList.toggle('hover');">
+                    <div class="avatar-container">
+                        <div class="photo">
+                            <img class="img" src="img/map-icon.png" alt="calendar" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content">
+                            <h2>Venir nous voir :</h2>
+                            <p>ZA Quai des Queyries, Port Bastide,33100 Bordeaux</p>
+                            <p><span style="font-weight: 400;"><strong>Parking</strong> payant<br /></span><span style="font-weight: 400;"><strong>Station VCub :</strong> Parc des Angéliques<br /></span><span style="font-weight: 400;"><strong>Tramway :</strong> ligne A – Arrêt Stalingrad<br /></span>
+                                <span
+                                    style="font-weight: 400;"><strong>Bus lignes :</strong> 45 – 91 – 92 – Arrêt Hortense</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-header">
+                    <h2>Horaires</h2>
+                </div>
+
+                <div class="row">
+                    <div class="avatar-container">
+                        <div class="photo">
+                            <img class="img" src="img/schedule-yellow.png" alt="calendar" />
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content-text">
+                            <h2>Nous sommes ouvert :</h2>
+                            <p><strong>Mai et Septembre :</strong> du jeudi au samedi de 19h à 1h30</p>
+                            <p><strong>Juin, Juillet et Août :</strong> du mercredi au samedi de 19h à 1h30</p>
+                            <p><strong>Tous les dimanches de Mai à Septembre : </strong>de 12h à 20h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Elodie Menu + resa -->
+    <section class="flex FoodMenu">
+        <h1>Le Menu</h1>
+        <div class="flex FoodMenuWrap">
+
+            <div class="flex FoodMenuBigBox">
+                <div class="flex FoodMenuBox">
+                    <div class="FoodMenuInBox ">
+                        <div class="FoodPic FoodPicFirst tapas"></div>
+                        <h2 class="FoodPicLegend">tapas</h2>
+                    </div>
+                </div>
+                <div class="flex FoodMenuBox">
+                    <div class="FoodMenuInBox">
+                        <div class="FoodPic dish"></div>
+                        <h2 class="FoodPicLegend">plats</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex FoodMenuBigBox">
+                <div class="flex FoodMenuBox">
+                    <div class="FoodMenuInBox">
+                        <div class="FoodPic beer"></div>
+                        <h2 class="FoodPicLegend">bière</h2>
+                    </div>
+                </div>
+                <div class="flex FoodMenuBox ">
+                    <div class="FoodMenuInBox ">
+                        <div class="FoodPic wine FoodPicLast"></div>
+                        <h2 class="FoodPicLegend">vin</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <form class=flex>
+        <h1>Nous contacter</h1>
+        <div class="formbloc flex">
+            <div class="formItem flex">
+                <label for="name">nom</label>
+                <input type="text" name="name" id="name"></div>
+            <div class="formItem flex">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" required></div>
+
+            <div class="formItem flex">
+                <label for="request">votre demande</label>
+                <select name="request" id="request">
               <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
               <option value="booking">Je voudrais réserver (groupes)</option>
               <option value="place">J'ai une question à propos du lieu</option>
               <option value="gig">J'ai une question à propos d'un concert</option>
               <option value="another_question">Il s'agit d'autre chose</option></select></div>
 
-          <div class="formItem flex">
-            <label for="date">date</label>
-            <input type="date" name="booking_date" id="date"></div>
+            <div class="formItem flex">
+                <label for="date">date</label>
+                <input type="date" name="booking_date" id="date"></div>
 
-          <div class="formItem flex">
-            <label for="message">votre message</label>
-            <textarea id="message" name="message" rows="5"></textarea></div>
-          
+            <div class="formItem flex">
+                <label for="message">votre message</label>
+                <textarea id="message" name="message" rows="5"></textarea></div>
+
             <div class="ButtonBox">
-            <button>envoyer</button></div>
-      </div>
-  </form>
+                <button>envoyer</button></div>
+        </div>
+    </form>
+    <!-- Elisa concert + footer-->
+    <section class="Elisa flex">
+        <h1 id="concerts"> Les concerts</h1>
+        <div class="content-Elisa flex">
+            <div class="grosblok flex">
+
+                <div class="concertssection flex">
+                    <div class="mai flex">
+                        <ul>
+                            <img src="https://image.flaticon.com/icons/svg/2673/2673563.svg" alt="icon of music" />
+                            <h3> MAI </h3>
+                            <li>Soirée d'ouverture: Jeudi 14 Mai - 18h</li>
+                        </ul>
+                    </div>
+                    <div class="juin flex">
+                        <ul>
+                            <img src="https://image.flaticon.com/icons/svg/2673/2673563.svg" alt="icon of music" />
+                            <h3> JUIN </h3>
+                            <li>Pink floyd: Samedi 20 Juin - 20h</li>
+                        </ul>
+                    </div>
+                    <div class="juillet flex">
+                        <ul>
+                            <img src="https://image.flaticon.com/icons/svg/2673/2673563.svg" alt="icon of music" />
+                            <h3> JUILLET </h3>
+                            <li> Duo de Jazz: Vendredi 3 Juillet - 20h </li>
+                            <li> Christophe Mae: Dimanche 12 Juillet - 20h</li>
+                        </ul>
+                    </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="aside-card">
+                <a href="#">
+                    <!-- Image à la une -->
+                    <div class="aside-card-image"><img src="http://www.jazzatours.com/sites/default/files/styles/fullscreen/public/2018-04/2017%2006%2008%20Atelier%204%20%20%C2%A9%20Remi%20Angeli%20-013.jpg?itok=Qo5yd1e7" alt="Orange" /></div>
+                    <!-- Fin de l'image à la une -->
+
+                    <!-- Corp de notre carte -->
+                    <div class="aside-card-body">
+
+                        <!-- Date de publication de l'article-->
+                        <div class="aside-card-date">
+                            <time>Ce mois-ci</time>
+                        </div>
+
+                        <!-- Titre de l'article -->
+                        <div class="aside-card-title">
+                            <h3>Coming soon...</h3>
+                        </div>
+                        <!-- Extrait de l'article -->
+                        <div class="aside-card-excerpt">
+                            <p> Les concerts commencent à partir de Mai. Des concerts uniques vous attendent cet été. Venez passez une soirée inoubliable chez nous. Vous pourrez réserver vos place début Mai ! </p>
+                        </div>
+
+                    </div>
+                    <!-- Fin du corp de notre carte -->
+                </a>
+            </div>
+        </div>
+        </div>
+
+    </section>
 
 
-
-  <!-- Elisa concert + footer-->
+    <footer class="flex">
+        <ul>
+            <li> <a href="#">Mentions Légales 
+                             </a></li>
+            <li>
+                <a href="#"> ginguette@gmail.com
+                    
+                </a> </li>
+            </li>
+            <li> <a href="#">ZA Quai des Queyries, Port Bastide,
+                        33100 Bordeaux
+                         </a></li>
+            <li> <a href="#">© WCS ● Tous droits réservés ● C.G.V.</a></li>
+        </ul>
+        <ul>
+            <li> <a href="#"> Suivez-nous sur Twitter</a></li>
+            <li>
+                <a href="#"> Suivez-nous sur Facebook</a>
+            </li>
+            <li>
+                <a href="#"> Newsletter</a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
 </script>
+
 </html>
