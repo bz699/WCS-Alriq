@@ -336,7 +336,8 @@ div.card {
 }
 
 .FoodMenu h1 {
-    color: #F2BB16;
+    color: #BF800B;
+    margin: 40px 0;
 }
 
 .FoodMenuWrap {
@@ -345,6 +346,7 @@ div.card {
     max-width: 900px;
     background-color: white;
     height: 220px;
+    margin: 40px 0;
 }
 
 .FoodMenuBigBox {
@@ -425,6 +427,7 @@ form h1 {
     color: #F2BB16;
     width: 100%;
     text-align: center;
+    margin: 40px 0;
 }
 
 .formItem {
