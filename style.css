@@ -727,9 +727,10 @@ footer li {
     footer {
         flex-direction: column;
     }
-    div.mai,
-    div.juin,
-    div.juillet {
+    div .mai,
+    div .juin,
+    div .juillet {
         width: 100%;
+        padding-right: 10px;
     }
 }
