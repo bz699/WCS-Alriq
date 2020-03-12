@@ -15,14 +15,15 @@
 
 <body>
     <!-- David nv + present-->
+    <section id="top">
     <div class="parallax">
         <header class="header">
-            <a href="#home" class="logo" alt="Logo Alriq">Chez Alriq</a>
+            <a href="#top" class="logo" alt="Logo Alriq">Chez Alriq</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
                 <li><a href="#infos" class="">Info Pratique</a></li>
-                <li><a href="#menu" class="">Menu</a></li>
+                <li><a href="#foodmenu" class="">Menu</a></li>
                 <li><a href="#concerts" class="">Concerts</a></li>
                 <li><a href="#contact" class="">Contact Us</a></li>
             </ul>
@@ -32,6 +33,7 @@
             <h3>Née en 1990 sur les bords de la Garonne, la Guinguette est le lieu idéal pour assister à un concert autour d'un verre ou d'un plat.</h3>
         </div>
     </div>
+    </section>
 
 
 
@@ -88,7 +90,7 @@
             </div>
     </section>
     <!-- Elodie Menu + resa -->
-    <section class="flex FoodMenu">
+    <section id ="foodmenu" class="flex FoodMenu">
         <h1>Le Menu</h1>
         <div class="flex FoodMenuWrap">
 
@@ -125,39 +127,6 @@
         </div>
 
     </section>
-
-    <form class=flex>
-        <h1>Nous contacter</h1>
-        <div class="formbloc flex">
-            <div class="formItem flex">
-                <label for="name">nom</label>
-                <input type="text" name="name" id="name"></div>
-            <div class="formItem flex">
-                <label for="email">email</label>
-                <input type="text" name="email" id="email" required></div>
-
-            <div class="formItem flex">
-                <label for="request">votre demande</label>
-                <select name="request" id="request">
-              <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
-              <option value="booking">Je voudrais réserver (groupes)</option>
-              <option value="place">J'ai une question à propos du lieu</option>
-              <option value="gig">J'ai une question à propos d'un concert</option>
-              <option value="another_question">Il s'agit d'autre chose</option></select></div>
-
-            <div class="formItem flex">
-                <label for="date">date</label>
-                <input type="date" name="booking_date" id="date"></div>
-
-            <div class="formItem flex">
-                <label for="message">votre message</label>
-                <textarea id="message" name="message" rows="5"></textarea></div>
-
-            <div class="ButtonBox">
-                <button>envoyer</button></div>
-        </div>
-    </form>
-    <!-- Elisa concert + footer-->
     <section class="Elisa flex">
         <h1 id="concerts"> Les concerts</h1>
         <div class="content-Elisa flex">
@@ -193,7 +162,7 @@
             </div>
 
             <div class="aside-card">
-                <a href="#">
+                <a href="#contact">
                     <!-- Image à la une -->
                     <div class="aside-card-image"><img src="http://www.jazzatours.com/sites/default/files/styles/fullscreen/public/2018-04/2017%2006%2008%20Atelier%204%20%20%C2%A9%20Remi%20Angeli%20-013.jpg?itok=Qo5yd1e7" alt="Orange" /></div>
                     <!-- Fin de l'image à la une -->
@@ -224,7 +193,38 @@
 
     </section>
 
+    <form id="contact" class=flex>
+        <h1>Nous contacter</h1>
+        <div class="formbloc flex">
+            <div class="formItem flex">
+                <label for="name">nom</label>
+                <input type="text" name="name" id="name"></div>
+            <div class="formItem flex">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" required></div>
 
+            <div class="formItem flex">
+                <label for="request">votre demande</label>
+                <select name="request" id="request">
+              <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
+              <option value="booking">Je voudrais réserver (groupes)</option>
+              <option value="place">J'ai une question à propos du lieu</option>
+              <option value="gig">J'ai une question à propos d'un concert</option>
+              <option value="another_question">Il s'agit d'autre chose</option></select></div>
+
+            <div class="formItem flex">
+                <label for="date">date</label>
+                <input type="date" name="booking_date" id="date"></div>
+
+            <div class="formItem flex">
+                <label for="message">votre message</label>
+                <textarea id="message" name="message" rows="5"></textarea></div>
+
+            <div class="ButtonBox">
+                <button>envoyer</button></div>
+        </div>
+    </form>
+    <!-- Elisa concert + footer-->
     <footer class="flex">
         <ul>
             <li> <a href="#">Mentions Légales 
@@ -240,12 +240,12 @@
             <li> <a href="#">© WCS ● Tous droits réservés ● C.G.V.</a></li>
         </ul>
         <ul>
-            <li> <a href="#"> Suivez-nous sur Twitter</a></li>
+            <li> <a href="#top"> Suivez-nous sur Twitter</a></li>
             <li>
-                <a href="#"> Suivez-nous sur Facebook</a>
+                <a href="#top"> Suivez-nous sur Facebook</a>
             </li>
             <li>
-                <a href="#"> Newsletter</a>
+                <a href="#top"> Newsletter</a>
             </li>
         </ul>
     </footer>
