@@ -108,8 +108,9 @@ a {
 .title h3 {
     margin-top: 0;
     font-size: 20px;
-}
-
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 /* header */
 
@@ -431,8 +432,8 @@ form h1 {
     margin: 40px 0 0 0;
 }
 
-label {
-    display: block;
+form label {
+    display:block;
     width: 100px;
     font-family: 'Roboto Slab', sans-serif;
 }
@@ -506,18 +507,22 @@ form button {
         background-color: #25D9B8;
         margin: -10px 10px 10px 10px;
     }
+    
     .formbloc {
         margin: 0 0 10px 0;
     }
+
     form h1 {
         color: white;
         margin: 10px 10px;
     }
+
     .formItem {
         flex-direction: column;
         margin: 10px 0 0 0;
     }
-    label {
+
+    form label {
         width: 200px;
         color: white;
         font-family: 'Roboto Slab', sans-serif;
