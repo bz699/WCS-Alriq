@@ -5,19 +5,268 @@
 .Voyages-4-hex { color: #F2BB16; }
 .Voyages-5-hex { color: #BF800B; }
 
+@font-face{
+  font-family: 'Horizon';
+  src: url('font/HorizonRounded.otf');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Horizon';
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
 
 /* General Elements */
 
+a {
+    color: #F2BB16;
+  }
 .flex{
     display: flex;
 }
 
+.parallax {
+    background-image: url("img/Garonne.jpg");
+  
+    min-height: 800px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
 
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    z-index: 2;
+    height: 700px;
+  }
 /*David nv + present*/
 
+  .title h1,.title h3 {
+    color: white;
+  }
+  .title h1{
+    font-size: 50px;
+  }
+  .title h3{
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #011F26;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #011F26;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #F2BB16;
+    color: #011F26;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon = menu burger style */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #F2BB16;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #F2BB16;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn = passage 3 traits menu burger à la croix */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+/* Section Infos Pratiques*/
+
+.infos h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px 40px 20px 40px;
+  color: #BF800B;
+}
+.card-header{
+  background-color: #40B3A1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-header h2{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-top: 0;
+    padding: 15px;
+  }
+.card-section{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  padding-top: 0;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    min-height: 300px;
+    box-shadow: 0px 5px 20px #999;
+    margin: 20px;
+}
+.content h2{
+  color: #F2BB16;
+}
+
+div.card{
+  width: 700px;
+}
+
+.img{
+    border-radius: 50%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 20px 60px 20px;
+}
+  
+  @media (min-width: 820px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+    .title h1{
+      font-size: 70px;
+    }
+    .title h3{
+      margin-top: 0;
+      font-size: 30px;
+    }
+  }
+@media (max-width: 1300px){
+
+  .card-section{
+    flex-wrap: wrap;
+  }
+  .row{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px;){
+  .row {
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+  }
+}
 
 
 
+/* Elodie Menu + resa */
 
 
 /* Elodie Menu + resa */
