@@ -22,7 +22,7 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
                 <li><a href="#infos" class="">Info Pratique</a></li>
-                <li><a href="#menu" class="">Menu</a></li>
+                <li><a href="#foodmenu" class="">Menu</a></li>
                 <li><a href="#concerts" class="">Concerts</a></li>
                 <li><a href="#contact" class="">Contact Us</a></li>
             </ul>
@@ -88,7 +88,7 @@
             </div>
     </section>
     <!-- Elodie Menu + resa -->
-    <section class="flex FoodMenu">
+    <section id="foodmenu" class="flex FoodMenu">
         <h1>Le Menu</h1>
         <div class="flex FoodMenuWrap">
 
@@ -126,37 +126,6 @@
 
     </section>
 
-    <form class=flex>
-        <h1>Nous contacter</h1>
-        <div class="formbloc flex">
-            <div class="formItem flex">
-                <label for="name">nom</label>
-                <input type="text" name="name" id="name"></div>
-            <div class="formItem flex">
-                <label for="email">email</label>
-                <input type="text" name="email" id="email" required></div>
-
-            <div class="formItem flex">
-                <label for="request">votre demande</label>
-                <select name="request" id="request">
-              <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
-              <option value="booking">Je voudrais réserver (groupes)</option>
-              <option value="place">J'ai une question à propos du lieu</option>
-              <option value="gig">J'ai une question à propos d'un concert</option>
-              <option value="another_question">Il s'agit d'autre chose</option></select></div>
-
-            <div class="formItem flex">
-                <label for="date">date</label>
-                <input type="date" name="booking_date" id="date"></div>
-
-            <div class="formItem flex">
-                <label for="message">votre message</label>
-                <textarea id="message" name="message" rows="5"></textarea></div>
-
-            <div class="ButtonBox">
-                <button>envoyer</button></div>
-        </div>
-    </form>
     <!-- Elisa concert + footer-->
     <section class="Elisa flex">
         <h1 id="concerts"> Les concerts</h1>
@@ -224,6 +193,34 @@
 
     </section>
 
+
+    <form id="contact" class=flex>
+      <h1>Nous contacter</h1>
+      <div class="formbloc flex">
+          <div class="formItem flex">
+              <label for="name">nom</label>
+              <input type="text" name="name" id="name"></div>
+          <div class="formItem flex">
+              <label for="email">email</label>
+              <input type="text" name="email" id="email" required></div>
+
+          <div class="formItem flex">
+              <label for="request">votre demande</label>
+              <select name="request" id="request">
+            <option value="0" selected>Pourquoi souhaitez-vous nous contacter ?</option>
+            <option value="booking">Je voudrais réserver (groupes)</option>
+            <option value="place">J'ai une question à propos du lieu</option>
+            <option value="gig">J'ai une question à propos d'un concert</option>
+            <option value="another_question">Il s'agit d'autre chose</option></select></div>
+
+          <div class="formItem flex">
+              <label for="message">votre message</label>
+              <textarea id="message" name="message" rows="5"></textarea></div>
+
+          <div class="ButtonBox">
+              <button>envoyer</button></div>
+      </div>
+  </form>
 
     <footer class="flex">
         <ul>
