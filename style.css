@@ -389,7 +389,7 @@ form h1 {
     margin: 40px 0 0 0 ;
 }
 
-label {
+form label {
     display:block;
     width: 100px;
     font-family: 'Roboto Slab', sans-serif;
@@ -497,7 +497,7 @@ form button {
         margin: 10px 0 0 0 ;
     }
 
-    label {
+    form label {
         width: 200px;
         color: white;
         font-family: 'Roboto Slab', sans-serif;
